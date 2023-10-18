@@ -1,5 +1,5 @@
 //your code here
-let arr = {'The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'};
+let arr = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 function getArticlelessString(input){
 	let word = input.split(" ");
 	let nonArticleWords = words.filter(
