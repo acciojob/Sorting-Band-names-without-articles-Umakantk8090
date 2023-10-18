@@ -1,12 +1,13 @@
 //your code here
-let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
-touristSpots.sort((a,b) =>{
-	if(a>b){
-		return 1;
-	}
-	if(a<b){
-		return -1;
-	}
-	return 0;
-})
-console.log(touristSpots);
+let arr = {'The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'};
+function getArticlelessString(input){
+	let word = input.split(" ");
+	let nonArticleWords = words.filter(words) => {
+		let smallCaseWord = word.toLowerCase();
+		if(smallCaseWord === "the" || smallCaseWord === "an" || smallCaseWord === "a"){
+			return false;
+		}
+		return true;
+	})
+	 return nonArticleWords.join(" ");
+}
