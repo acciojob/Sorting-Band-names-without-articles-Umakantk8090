@@ -1,6 +1,6 @@
 //your code here
 let arr = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
-function getArticlelessString(input){
+function getArticleLessString(input){
 	let words = input.split(" ");
 	let nonArticleWords = words.filter(
 		(word) => {
@@ -9,7 +9,7 @@ function getArticlelessString(input){
 			return false;
 		}
 		return true;
-	 }
-	);
+	  }
+   );
 	 return nonArticleWords.join(" ");
 }
