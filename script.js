@@ -2,13 +2,14 @@
 let arr = {'The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'};
 function getArticlelessString(input){
 	let word = input.split(" ");
-	let nonArticleWords = words.filter(words) => {
+	let nonArticleWords = words.filter(
+		(words) => {
 		let smallCaseWord = word.toLowerCase();
 		if(smallCaseWord === "the" || smallCaseWord === "an" || smallCaseWord === "a"){
 			return false;
 		}
 		return true;
-	}
+	 }
 	);
 	 return nonArticleWords.join(" ");
 }
