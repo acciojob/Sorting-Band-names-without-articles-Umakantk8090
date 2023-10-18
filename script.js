@@ -8,6 +8,7 @@ function getArticlelessString(input){
 			return false;
 		}
 		return true;
-	})
+	}
+	);
 	 return nonArticleWords.join(" ");
 }
